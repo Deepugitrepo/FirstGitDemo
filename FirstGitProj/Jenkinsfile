@@ -16,7 +16,7 @@ pipeline{
 
     stage ('Build'){
       steps{
-        sh 'mvn - v /var/lib/jenkins/workspace/FirstGitDemo/FirstGitProj/pom.xml clean package'
+        sh 'mvn clean package --file *.pom'
       }
     }
   
