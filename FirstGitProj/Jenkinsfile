@@ -16,9 +16,7 @@ pipeline{
 
     stage ('Build'){
       steps{
-        sh 'mvn clean install'
-        def pom = readMavenPom file:'pom.xml'
-        print pom.version
+        sh 'mvn clean install'        
       }
     }
   
